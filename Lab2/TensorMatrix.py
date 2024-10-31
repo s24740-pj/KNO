@@ -32,9 +32,9 @@ def main():
     # [[9.0], [8.0], [7.0]]))
 
     #poprawne
-    #python tensor.py '[[1.0, 2.0, 3.0], [2.0, 3.0, 1.0], [3.0, 1.0, 2.0]]' '[[9.0], [8.0], [7.0]]'
+    #python TenorsMatrix.py '[[1.0, 2.0, 3.0], [2.0, 3.0, 1.0], [3.0, 1.0, 2.0]]' '[[9.0], [8.0], [7.0]]'
     #niepoprawne
-    #python tensor.py '[[1.0, 2.0, 3.0], [2.0, 3.0, 1.0], [3.0, 1.0, 2.0]]' '[[9.0], [8.0], [7.0], [3.0]]'
+    #python TenorsMatrix.py '[[1.0, 2.0, 3.0], [2.0, 3.0, 1.0], [3.0, 1.0, 2.0]]' '[[9.0], [8.0], [7.0], [3.0]]'
 
     # Ustawienia argumentów
     parser = argparse.ArgumentParser(description='Rozwiąż układ równań liniowych.')
