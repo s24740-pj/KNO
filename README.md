@@ -60,9 +60,25 @@ This project contains TensorFlow functions for various mathematical computations
 
 ## Project 3: Wine Classification
 ### Models description
-`Model 1` is very simple with `3 layers`. Using relu and softmax at output.\
-`Model 2` is more complicated with `6 layers`. Using relu, dropout and softmax as a normal layer and on output.
-
+`Model 1` is very simple with `3 layers`. Using `relu` and `softmax` at output.\
+```python
+model1 = tf.keras.Sequential([
+    tf.keras.layers.Dense(64, activation='relu', input_shape=(X_train.shape[1],), name='Layer_1'),
+    tf.keras.layers.Dense(32, activation='relu', name='Layer_2'),
+    tf.keras.layers.Dense(3, activation='softmax', name='Output_Layer')
+])
+```
+`Model 2` is more complicated with `6 layers`. Using `relu`, `dropout` and `softmax` as a normal layer and on output.
+```python
+model2 = tf.keras.Sequential([
+    tf.keras.layers.Dense(128, activation='relu', input_shape=(X_train.shape[1],), name='Layer_1'),
+    tf.keras.layers.Dense(64, activation='relu', name='Layer_2'),
+    tf.keras.layers.Dropout(0.5, name='Dropout_Layer'),
+    tf.keras.layers.Dense(32, activation='relu', name='Layer_3'),
+    tf.keras.layers.Dense(16, activation='softmax', name='Layer_4'),
+    tf.keras.layers.Dense(3, activation='softmax', name='Output_Layer')
+])
+```
 ### Accuracy of models
 ![models_accuracy.png](./Lab3/Screenshots/models_accuracy.png)
 
