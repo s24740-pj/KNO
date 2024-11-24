@@ -59,6 +59,7 @@ This project contains TensorFlow functions for various mathematical computations
 
 
 ## Project 3: Wine Classification
+**Folder:** `Lab3`
 ### Models description
 `Model 1` is very simple with `3 layers`. Using `relu` and `softmax` at output.\
 ```python
@@ -84,3 +85,21 @@ model2 = tf.keras.Sequential([
 
 ### Conclusions
 `Model 1` is far better than `Model 2`. It is simplier, smaller amount of layers and more rarely to overfitting data from wine.data which is not large set.
+
+## Project 4: Wine Classification #2
+**Folder:** `Lab4`
+
+### Description/Summary
+In this task, we created a `neural network` model for `wine classification` based on a dataset containing various chemical properties of wines. The goal was to `optimize the model’s hyperparameters`, such as the `number of neurons in layers` and the `learning rate`, to `improve` results compared to the baseline model created in previous sessions.
+
+We started by splitting the data into three subsets: `training`, `validation`, and `test sets`, ensuring a consistent split every time the code is run. Next, we created the `baseline model`, which served as a `reference point`. Results were recorded for the `validation` and `test` sets based on this model.
+
+Then, we organized the code so that the `model creation process` is handled by a separate function that accepts parameters like the `number of neurons` in layers and the `learning rate`, and `returns the model`. We performed `experiments` with `different combinations` of these parameters to `identify the best configuration`. 
+
+The results of the experiments were saved in a table, and the `best model` was tested on the test set and compared to the baseline model. Using `TensorBoard`, we visualized the training process, which helped in analyzing the model's performance.
+
+The entire process was `automated`, and the script tested all parameter combinations, `generating` a results table and identifying the `best model`.
+
+### Accuracy of models
+`Baseline` and `all experiment models`
+![models_accuracy.png](./Lab4/Screenshots/models_accuracy.png)
