@@ -55,3 +55,15 @@ This project contains TensorFlow functions for various mathematical computations
 
 ### Key Files
 - `TensorMatrix.py`: Core file with rotation functions, linear system solver, and CLI setup.
+
+
+## Project 3: Wine Classification
+### Models description
+`Model 1` is very simple with `3 layers`. Using relu and softmax at output.\
+`Model 2` is more complicated with `6 layers`. Using relu, dropout and softmax as a normal layer and on output.
+
+### Accuracy of models
+![models_accuracy.png](./Lab3/Screenshots/models_accuracy.png)
+
+### Conclusions
+`Model 1` is far better than `Model 2`. It is simplier, smaller amount of layers and more rarely to overfitting data from wine.data which is not large set.
