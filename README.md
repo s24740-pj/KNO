@@ -6,6 +6,7 @@ This repository contains two projects demonstrating fundamental TensorFlow-based
 - [Project 1: MNIST Digit Classifier](#project-1-mnist-digit-classifier)
 - [Project 2: TensorFlow Math Functions](#project-2-tensorflow-math-functions)
 - [Project 3: Wine Classification](#project-3-wine-classification)
+- [Project 4: Wine Classification #2](#project-4-wine-classification-2)
 
 ---
 
