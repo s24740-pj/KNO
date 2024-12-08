@@ -7,6 +7,7 @@ This repository contains two projects demonstrating fundamental TensorFlow-based
 - [Project 2: TensorFlow Math Functions](#project-2-tensorflow-math-functions)
 - [Project 3: Wine Classification](#project-3-wine-classification)
 - [Project 4: Wine Classification #2](#project-4-wine-classification-2)
+- [Project 5: Wine Classification #3](#project-5-wine-classification-3)
 
 ---
 
@@ -104,3 +105,14 @@ The entire process was `automated`, and the script tested all parameter combinat
 ### Accuracy of models
 `Baseline` and `all experiment models`
 ![models_accuracy.png](./Lab4/Screenshots/models_accuracy.png)
+
+## Project 5: Wine Classification #3
+**Folder:** `Lab5`
+
+### Description/Summary
+In this lab we've put [model in class](https://www.tensorflow.org/guide/keras/making_new_layers_and_models_via_subclassing#the_model_class).\
+After that we used [autotuner](https://www.tensorflow.org/tutorials/keras/keras_tuner) to optimize hyperparameters.
+[Autotuner](https://www.tensorflow.org/tutorials/keras/keras_tuner) helped us to search for a 1.0 accuracy. 
+
+### Accuracy of models
+![terminal1.png](Lab5/Screenshots/terminal1.png)
