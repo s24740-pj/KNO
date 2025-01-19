@@ -8,6 +8,7 @@ This repository contains two projects demonstrating fundamental TensorFlow-based
 - [Project 3: Wine Classification](#project-3-wine-classification)
 - [Project 4: Wine Classification #2](#project-4-wine-classification-2)
 - [Project 5: Wine Classification #3](#project-5-wine-classification-3)
+- [Project 7: Autoencoder (Generating images)](#project-7-autoencoder-generating-images)
 
 ---
 
@@ -127,9 +128,12 @@ This project implements a small `autoencoder` for image generation, using a low-
 ### Decoding the encoded original image
 ![EncodeDecode.png](Lab7/Plots/EncodeDecode.png)
 
+---
+
 ### Animals experiments
 **Images:** `/Images/Animals`
 
+Added 20 different animals.
 ![1Animals.png](Lab7/Plots/1Animals.png)
 ![2Animals.png](Lab7/Plots/2Animals.png)
 ![3Animals.png](Lab7/Plots/3Animals.png)
@@ -147,20 +151,29 @@ Added 10 basic textures from minecraft.
 
 ---
 
+### Disney experiments
+**Images:** `/Images/Disney`
+
+Added 10 disney characters.
+![1Disney.png](Lab7/Plots/1Disney.png)
+
+
+---
+
+### VanGogh experiments
+**Images:** `/Images/VanGogh`
+
+Added 10 VanGogh paintings.
+![1VanGogh.png](Lab7/Plots/1VanGogh.png)
+
+---
+
 ### Minecraft and Animals experiments
 **Images:** `/Images/Minecraft` \
 **Images:** `/Images/Animals`
 
 Added 2 colored textures from minecraft and one cat image.
 ![1AnimalsMinecraft.png](Lab7/Plots/1AnimalsMinecraft.png)
-
----
-
-### Disney experiments
-**Images:** `/Images/Disney`
-
-Added 10 disney characters.
-![1Disney.png](Lab7/Plots/1Disney.png)
 
 ---
 
