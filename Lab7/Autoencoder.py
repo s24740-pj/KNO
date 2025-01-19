@@ -80,43 +80,18 @@ def main():
                     epochs=2000,
                     shuffle=True)
 
-    # encoded_imgs = np.random.normal(size=(100, latent_dim))
-    # decoded_imgs = autoencoder.decoder(encoded_imgs).numpy()
-    #
-    # decoded_imgs = np.clip(decoded_imgs, 0, 1)
-    #
-    # fig, axs = plt.subplots(10, 10)
-    #
-    # for y in range(10):
-    #     for x in range(10):
-    #         axs[y, x].imshow(decoded_imgs[y * 10 + x].reshape(img_size, img_size, 3))
-    #         axs[y, x].axis('off')
-    #
-    # plt.show()
+    encoded_imgs = np.random.normal(size=(100, latent_dim))
+    decoded_imgs = autoencoder.decoder(encoded_imgs).numpy()
 
-    # Pick 10 random images to compare
-    indices = np.random.choice(len(x_train), 10, replace=False)
-    selected_images = x_train[indices]
+    decoded_imgs = np.clip(decoded_imgs, 0, 1)
 
-    # Reconstruct selected images
-    reconstructed_images = autoencoder(selected_images).numpy()
-    reconstructed_images = np.clip(reconstructed_images, 0, 1)
+    fig, axs = plt.subplots(10, 10)
 
-    # Create a 10-row, 2-column plot
-    fig, axs = plt.subplots(2, 10, figsize=(20, 5))
+    for y in range(10):
+        for x in range(10):
+            axs[y, x].imshow(decoded_imgs[y * 10 + x].reshape(img_size, img_size, 3))
+            axs[y, x].axis('off')
 
-    for i in range(10):
-        # Show original
-        axs[0, i].imshow(selected_images[i])
-        axs[0, i].set_title("Original")
-        axs[0, i].axis('off')
-
-        # Show reconstructed
-        axs[1, i].imshow(reconstructed_images[i])
-        axs[1, i].set_title("Reconstructed")
-        axs[1, i].axis('off')
-
-    plt.tight_layout()
     plt.show()
 
 if __name__ == '__main__':
