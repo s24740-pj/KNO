@@ -116,3 +116,64 @@ After that we used [autotuner](https://www.tensorflow.org/tutorials/keras/keras_
 
 ### Accuracy of models
 ![terminal1.png](Lab5/Screenshots/terminal1.png)
+
+
+## Project 7: Autoencoder (Generating Images)
+**Folder:** `Lab7`
+
+### Description/Summary
+This project implements a small `autoencoder` for image generation, using a low-dimensional latent space `latent_dim=2` and processing `64x64` images or changed if needed. The model consists encoder and decoder with batch normalization and dropout, optimized to reconstruct input images as accurately as possible. Data augmentation, including `rotation`, `shifting`, `shearing`, `zooming`, and `flipping`, enhances training. The results are visualized as a 10x10 grid of reconstructed samples.
+
+### Decoding the encoded original image
+![EncodeDecode.png](Lab7/Plots/EncodeDecode.png)
+
+### Animals experiments
+**Images:** `/Images/Animals`
+
+![1Animals.png](Lab7/Plots/1Animals.png)
+![2Animals.png](Lab7/Plots/2Animals.png)
+![3Animals.png](Lab7/Plots/3Animals.png)
+
+Only duck and cat. Duck looks like has a hat or is a unicorn.
+![4Animals.png](Lab7/Plots/4Animals.png)
+
+---
+
+### Minecraft experiments
+**Images:** `/Images/Minecraft`
+
+Added 10 basic textures from minecraft.
+![1Minecraft.png](Lab7/Plots/1Minecraft.png)
+
+---
+
+### Minecraft and Animals experiments
+**Images:** `/Images/Minecraft` \
+**Images:** `/Images/Animals`
+
+Added 2 colored textures from minecraft and one cat image.
+![1AnimalsMinecraft.png](Lab7/Plots/1AnimalsMinecraft.png)
+
+---
+
+### Disney experiments
+**Images:** `/Images/Disney`
+
+Added 10 disney characters.
+![1Disney.png](Lab7/Plots/1Disney.png)
+
+---
+
+### Disney and Minecraft experiments
+**Images:** `/Images/Disney`
+**Images:** `/Images/Minecraft`
+
+Here is my favorite one because of the stich blended with glowstone that looks super cool.
+![FavouriteOne.png](Lab7/Plots/FavouriteOne.png)
+![Stitch.png](Lab7/Plots/Stitch.png)
+
+### All in One experiments
+**Images:** `/Images`
+
+All images in one. Something cool happening here.
+![1AllImages.png](Lab7/Plots/1AllImages.png)
